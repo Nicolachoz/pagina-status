@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> STATUS TATTOO AND ART GALLERY</title>
+    <link rel="icon" href="/IMAGENES STATUS/logo_status-removebg-preview-removebg-preview.png" type="image/jpg" />
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <form action="conexion.php" method="post" enctype="multipart/form-data">
+        <main class="publicar--empleo">
+            <section class="main__info">
+                <div class="main__info--content">
+                    <h1 class="content-h1">¿Que esperas?</h1>
+                    <p class="content-p">
+                        Haz la cotizacion del tatuaje de tus sueños ahora mismo.
+                    </p>
+                </div>
+            </section>
+
+            <section class="main__form">
+                <h2 class="main__form--title">Haz tu cotización</h2>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" />
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Numero de celular</label>
+                    <input type="text" name="telefono" id="telefono" placeholder="telefono" />
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <textarea name="descripcion" id="descripcion" placeholder="Describe tu tatuaje, dinos el tamaño, la zona del tatuaje, el estilo del tatuaje, si lo quieres a color o sombras y si quieres hacer algun cambio." name="descripcion"></textarea>
+                </div>
+
+                <div class="form-file">
+                    <div class="form-file__action">
+                        <label for="image" class="title">Foto de referencia</label>
+
+                        <input type="file" name="image" id="image" />
+                    </div>
+                    <div class="form-file__result" id="result-image">
+                        <img id="img-result" alt="" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="form-button">Enviar</button>
+                </div>
+
+
+            </section>
+        </main>
+    </form>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
