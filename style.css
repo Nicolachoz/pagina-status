@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+    background-image: url("IMAGENES STATUS/fondosheader.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5px 2px #b1b1b1
+}
+
+.move_content {
+    right: 230px;
+}
+
+.container_header {
+    max-width: 2000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 20px;
+    box-shadow: 0 0 5px 2px #b1b1b1
+}
+
+header .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-left: 60px;
+}
+
+.container_nav {
+    position: relative;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 11px;
+}
+
+.select {
+    background-color: rgb(219, 187, 4);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+
+.nav_mod {
+    height: 80px;
+    box-shadow: 1px 1px 10px 0px #00000010;
+    background-image: url("IMAGENES STATUS/fondosheader.jpg");
+}
+
+.btn__menu {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn__menu:hover {
+    background: #f2f2f2;
+}
+
+.btn__header:hover {
+    background: rgb(219, 187, 4);
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: all 25ms;
+}
+
+.btn-flotante {
+    font-size: 14px;
+    /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase;
+    /* Texto en mayusculas */
+    font-weight: bold;
+    /* Fuente en negrita o bold */
+    color: #000000;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Borde del boton */
+    letter-spacing: 2px;
+    /* Espacio entre letras */
+    background-color: rgb(219, 187, 4);
+    /* Color de fondo */
+    padding: 18px 30px;
+    /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante:hover {
+    background-color: white;
+    /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider--inner {
+    margin-top: 64px;
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
+}
+
+.slider--inner img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.qs {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.qs p {
+    font-size: 16px;
+    margin: 0px 160px 160px 160px;
+    line-height: 2;
+}
+
+.qs h1 {
+    font-size: 50px;
+    margin: 50px auto;
+    margin-top: 140px;
+}
+
+.container_servicios {
+    background-image: url("IMAGENES STATUS/fondosheader.jpg");
+    background-size: cover;
+}
+
+.container_servicios h1 {
+    font-size: 50px;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+}
+
+.container_servicios img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    object-fit: cover;
+}
+
+.container_servicios h5 {
+    margin: 15px;
+}
+
+.container_servicios p {
+    margin: 25px;
+    margin-bottom: 60px;
+}
+
+.slider--inner2 {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
+}
+
+.slider--inner2 img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0px 20px 0px 0px;
+    width: 300px;
+    height: 450px;
+}
+
+.card {
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.card img {
+    aspect-ratio: 9/16;
+    margin-top: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.np h1 {
+    text-align: center;
+    font-size: 50px;
+    margin: 40px auto;
+    margin-top: 80px;
+}
+
+.np p {
+    text-align: center;
+    margin: 0px 150px 40px 150px;
+}
+
+.horarios {
+    width: 100%;
+    height: 400px;
+    background-image: url("IMAGENES STATUS/horario/ufabizphoto-shutterstock.jpg");
+    background-size: cover;
+}
+
+.horarios h1 {
+    margin: 0px 0px 10px 0px;
+    padding: 100px 20px 0px 0px;
+    text-align: center;
+    color: white;
+}
+
+.horarios h4 {
+    margin: 20px;
+    text-align: center;
+    color: white;
+}
+
+.horarios h5 {
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+    color: whitesmoke;
+}
+
+.container_ubicacion {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container_ubicacion iframe {
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+.container_ubicacion i {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center !important;
+}
+
+footer {
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #e5e5e5;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 80px;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 140px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+@media screen and (max-width: 880px) {
+    .container_nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .btn__menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+    nav {
+        height: 100%;
+        background: #f2f2f2;
+        position: fixed;
+        top: 0;
+        right: -240px;
+        padding: 0 40px;
+        transition: all 300ms;
+    }
+    .move_nav {
+        right: 0px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 20px 0px;
+    }
+    .qs h1 {
+        margin-top: 40px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .qs p {
+        font-size: 14px;
+        display: flex;
+        margin: 0px 15px 0px 15px;
+    }
+    .np h1 {
+        font-size: 35px;
+    }
+    .np p {
+        font-size: 14px;
+        margin: 25px;
+    }
+    .container_servicios h1 {
+        margin-top: 40px;
+    }
+    .container_ubicacion {
+        width: 100%;
+        align-items: center;
+    }
+    .container_ubicacion iframe {
+        height: 350px;
+        width: 300px;
+    }
+    .container_ubicacion h1 {
+        margin-top: 40px;
+    }
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+    .box__footer {
+        margin-inline: 0px;
+    }
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        right: 20px;
+    }
+}

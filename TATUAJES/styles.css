@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    font-family: 'Poppins', sans-serif;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    transition: all 300ms;
+    background-image: url("../IMAGENES STATUS/fondosheader.jpg");
+    background-size: cover;
+    box-shadow: 0 0 5px 2px #b1b1b1
+}
+
+.move_content {
+    right: 230px;
+}
+
+.container_header {
+    max-width: 2000px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px 20px;
+    box-shadow: 0 0 5px 2px #b1b1b1
+}
+
+header .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 200px;
+    margin-left: 60px;
+}
+
+.container_nav {
+    position: relative;
+    height: 100%;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0px 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 11px;
+}
+
+.select {
+    background-color: rgb(219, 187, 4);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 20px;
+}
+
+.nav_mod {
+    height: 80px;
+    box-shadow: 3px 3px 10px 0px #00000010;
+    background-image: url("../IMAGENES STATUS/fondosheader.jpg");
+}
+
+.btn__menu {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background 300ms;
+    display: none;
+}
+
+.btn__menu:hover {
+    background: #f2f2f2;
+}
+
+.btn__header:hover {
+    background: rgb(219, 187, 4);
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: all 25ms;
+}
+
+.btn-flotante {
+    font-size: 14px;
+    /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase;
+    /* Texto en mayusculas */
+    font-weight: bold;
+    /* Fuente en negrita o bold */
+    color: #000000;
+    /* Color del texto */
+    border-radius: 5px;
+    /* Borde del boton */
+    letter-spacing: 2px;
+    /* Espacio entre letras */
+    background-color: rgb(219, 187, 4);
+    /* Color de fondo */
+    padding: 18px 30px;
+    /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.btn-flotante:hover {
+    background-color: white;
+    /* Color de fondo al pasar el cursor */
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+
+.tatuadores {
+    width: 80%;
+    margin-top: 110px;
+    margin-left: 10%;
+    text-align: center !important;
+    align-content: center;
+    height: auto !important;
+}
+
+.tatuadores h5 {
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+.tatuadores h3 {
+    padding-top: 20px;
+}
+
+.tatuador {
+    margin: 30px;
+}
+
+.tatuador h6 {
+    padding: 20px;
+    font-weight: 400;
+}
+
+.carousel-item img {
+    align-items: center !important;
+    align-content: center;
+}
+
+footer {
+    width: 100%;
+    padding-bottom: 5px;
+    background-color: #e5e5e5;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    height: 270px;
+}
+
+.box__footer {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 80px;
+    padding: 40px;
+}
+
+.box__footer .logo img {
+    width: 140px;
+}
+
+.box__footer .terms {
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+    font-size: 14px;
+}
+
+.box__footer h2 {
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.box__footer a {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.box__footer a:hover {
+    opacity: 0.8;
+}
+
+.box__footer a .fab {
+    font-size: 20px;
+}
+
+.box__copyright {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p {
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr {
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+@media screen and (max-width: 880px) {
+    .container_nav {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .btn__menu {
+        display: flex;
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+    nav {
+        height: 100%;
+        background: #f2f2f2;
+        position: fixed;
+        top: 0;
+        right: -240px;
+        padding: 0 40px;
+        transition: all 300ms;
+    }
+    .move_nav {
+        right: 0px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 20px 0px;
+    }
+    .row {
+        --bs-gutter-x: 0rem;
+    }
+    .box__footer {
+        margin-inline: 0px;
+    }
+    .tatuadores img {
+        width: 80%;
+    }
+    .tatuador p {
+        margin: 10px;
+    }
+    .tatuadores {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .tatuadores p {
+        margin: 10px;
+    }
+    .container__footer {
+        height: 600px;
+    }
+    .btn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        right: 20px;
+    }
+}
